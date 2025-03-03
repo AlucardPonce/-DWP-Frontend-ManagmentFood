@@ -1,0 +1,15 @@
+.main-container {
+    display: flex;
+    margin-top: 60px; /* Altura del Navbar */
+}
+
+.content {
+    margin-left: 250px; /* Ajusta según el ancho del Sidebar */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    flex: 1;
+}
+
+.sidebar.collapsed ~ .content {
+    margin-left: 80px; /* Ajusta cuando el Sidebar está colapsado */
+}

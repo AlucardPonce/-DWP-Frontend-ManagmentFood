@@ -1,0 +1,42 @@
+.sidebar {
+    width: 250px;
+    height: calc(100vh - 60px); /* Altura total menos la altura del Navbar */
+    background-color: #333;
+    color: white;
+    transition: width 0.3s ease;
+    position: fixed;
+    top: 60px; /* Debajo del Navbar */
+    left: 0;
+    z-index: 999;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.menu-toggle {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    background-color: #555;
+}
+
+.ant-menu {
+    margin-top: 10px;
+}
+
+.ant-menu-item {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.ant-menu-item:hover {
+    background-color: #444;
+}
