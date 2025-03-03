@@ -4,12 +4,36 @@
 }
 
 .content {
-    margin-left: 250px; /* Ajusta según el ancho del Sidebar */
+    margin-left: 80px; /* Ancho del Sidebar colapsado */
     padding: 20px;
     transition: margin-left 0.3s ease;
     flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Autoajusta los botones */
+    gap: 20px; /* Espacio entre los botones */
+    align-items: start; /* Alinea los botones en la parte superior */
 }
 
 .sidebar.collapsed ~ .content {
     margin-left: 80px; /* Ajusta cuando el Sidebar está colapsado */
+}
+
+.sidebar:not(.collapsed) ~ .content {
+    margin-left: 250px; /* Ajusta cuando el Sidebar está expandido */
+}
+
+.big-button {
+    width: 100%; /* Ocupa todo el espacio disponible en la celda de la cuadrícula */
+    height: 200px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.big-button:hover {
+    background-color: #3700b3;
 }

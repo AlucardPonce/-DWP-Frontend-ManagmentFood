@@ -1,13 +1,14 @@
 .sidebar {
     width: 250px;
-    height: calc(100vh - 60px); /* Altura total menos la altura del Navbar */
+    height: calc(100vh - 60px);
     background-color: #333;
     color: white;
     transition: width 0.3s ease;
     position: fixed;
-    top: 60px; /* Debajo del Navbar */
+    top: 60px;
     left: 0;
-    z-index: 999;
+    z-index: 1001; 
+    padding-top: 10px;
 }
 
 .sidebar.collapsed {
@@ -33,10 +34,20 @@
 }
 
 .ant-menu-item {
-    font-size: 16px;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px !important; 
 }
 
-.ant-menu-item:hover {
-    background-color: #444;
+.ant-menu-item .anticon {
+    font-size: 18px; 
+    margin-right: 10px;
+}
+
+.sidebar.collapsed .ant-menu-item {
+    justify-content: center; 
+}
+
+.sidebar.collapsed .ant-menu-item .anticon {
+    margin-right: 0; 
 }

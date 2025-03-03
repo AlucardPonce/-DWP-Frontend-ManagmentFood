@@ -8,7 +8,7 @@ import {
     MenuUnfoldOutlined,
 } from '@ant-design/icons';
 import { Button, Menu } from 'antd';
-import '../styles/Sidebar.css'; // Importar estilos del Sidebar
+import '../styles/Sidebar.css';
 
 const items = [
     {
@@ -34,7 +34,7 @@ const items = [
 ];
 
 const Sidebar = () => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     const toggleCollapsed = () => {
         setCollapsed(!collapsed);
