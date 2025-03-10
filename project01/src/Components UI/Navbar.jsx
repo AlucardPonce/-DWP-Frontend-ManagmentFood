@@ -15,7 +15,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="nav-links">
-                    <a href="/"><HomeOutlined /> Inicio</a>
+                    <a href="/home"><HomeOutlined /> Inicio</a>
                     <a href="/pagina"><BarChartOutlined /> Gráficas</a>
                     <a href="/sucursales"><ShopOutlined /> Sucursales</a>
                     <div className="search-container">
