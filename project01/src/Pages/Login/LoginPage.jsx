@@ -1,13 +1,14 @@
 import { Form, Input, Button, Card, Typography, message } from "antd";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./styles";
 
 const { Title } = Typography;
 
 const LoginPage = () => {
     const [loading, setLoading] = useState(false);
     const [formError, setFormError] = useState("");
-    const navigate="";//Por lo mientrasa
+    const navigate="";
     const onFinish = (values) => {
         setLoading(true);
         setFormError("");
@@ -75,34 +76,6 @@ const LoginPage = () => {
             </Card>
         </div>
     );
-};
-
-const styles = {
-    container: {
-        height: "100vh", // Asegurarse que el contenedor ocupe toda la altura de la ventana
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "linear-gradient(135deg, #667eea, #764ba2)", // Fondo de gradiente
-    },
-    card: {
-        width: 380,
-        padding: 20,
-        borderRadius: 10,
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
-        background: "#fff",
-    },
-    button: {
-        backgroundColor: "#1890ff",
-        borderColor: "#1890ff",
-        fontSize: "16px",
-    },
-    errorMessage: {
-        color: "#f5222d",
-        marginBottom: "10px",
-        fontSize: "14px",
-        textAlign: "center",
-    },
 };
 
 export default LoginPage;
