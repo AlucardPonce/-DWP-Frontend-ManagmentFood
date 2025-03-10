@@ -1,9 +1,12 @@
 import React from 'react';
+import './Styles/Footer.css';
 
 const Footer = () => {
     return (
         <footer>
-            {/* Aquí iría el contenido del footer si es necesario */}
+            <div clasname="footer" >
+                <p>© 2025 Mi Aplicación</p>
+            </div>
         </footer>
     );
 };
