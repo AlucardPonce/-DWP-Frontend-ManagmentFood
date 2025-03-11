@@ -47,6 +47,7 @@ app.listen(port, () => {
     console.log(`🚀 Servidor corriendo en: ${Base_Url}`);
 });
 
+/*
 const generateToken = (userId) => {
     return jwt.sign({ userId }, process.env.JWT_SECRET, { expiresIn: '10m' });
 };
@@ -110,3 +111,4 @@ app.post('/validate', async (req, res) => {
         return res.status(500).json({ statusCode: 500, intMessage: 'Error interno del servidor', error: err.message });
     }
 });
+*/
