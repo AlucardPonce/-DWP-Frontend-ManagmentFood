@@ -25,7 +25,7 @@
 .big-button {
     width: 100%; /* Ocupa todo el espacio disponible en la celda de la cuadrícula */
     height: 200px;
-    background-color: #6200ea;
+    background-color: #437B93;
     color: white;
     border: none;
     border-radius: 10px;
@@ -35,5 +35,5 @@
 }
 
 .big-button:hover {
-    background-color: #3700b3;
+    background-color: #437B93;
 }
