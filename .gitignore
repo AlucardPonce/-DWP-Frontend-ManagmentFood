@@ -4,7 +4,7 @@
 /node_modules
 # Ignorar node_modules en todas las subcarpetas
 node_modules/
-\node_modules\.cache\default-development\0.pack
+/node_modules/.cache/default-development/0.pack
 /.pnp
 .pnp.js
 
@@ -30,3 +30,4 @@ project01/node_modules/.cache/default-development/0.pack
 project01/node_modules/.cache/default-development/0.pack
 /project01/node_modules/.cache
 project01/node_modules/.cache/default-development/0.pack
+/project01/node_modules

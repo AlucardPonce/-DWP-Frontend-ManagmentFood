@@ -16,7 +16,7 @@ const Navbar = () => {
                 </div>
                 <div className="nav-links">
                     <Link to="/home"><HomeOutlined /> Inicio</Link>
-                    <Link to="/home/pagina"><BarChartOutlined /> Gráficas</Link>
+                    <Link to="/home/graficas"><BarChartOutlined /> Gráficas</Link>
                     <Link to="/home/sucursales"><ShopOutlined /> Sucursales</Link>
                     <div className="search-container">
                         <SearchOutlined className="search-icon" />
