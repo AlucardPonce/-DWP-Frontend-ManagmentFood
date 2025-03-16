@@ -1,7 +1,7 @@
 import React from 'react';
 import Options from './components/optionbar';
 import Bto from './components/button';
-import './components/styles/styles.css'
+import './components/styles/sucursal.css'
 
 const Sucursal = () => {
     return (
